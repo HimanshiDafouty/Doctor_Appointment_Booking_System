@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import 'dotenv/config'
+import serverless from 'serverless-http'
 import connectDB from './config/mongodb.js'
 import connectCloudinary from './config/cloudinary.js'
 import adminRouter from './routes/adminRoute.js'
@@ -32,4 +33,6 @@ app.get('/', (req, res) => {
     res.send('API WORKING')
 })
 
-app.listen(port, () => console.log("Server Started At PORT", port))
+
+
+export const handler = serverless(app);
