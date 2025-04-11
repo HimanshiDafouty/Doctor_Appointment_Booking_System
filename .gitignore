@@ -1,0 +1,11 @@
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+admin/.env
+admin/.env.local
+admin/.env.*.local
